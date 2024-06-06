@@ -22,8 +22,9 @@ void InitializeContactNode(ContactNode *headNode, char *name, char *phone) {
 
 void InsertAfter(ContactNode* thisNode, ContactNode* newContactNode) {
    thisNode->next = newContactNode;
-   ContactNode* tempNext = thisNode->next;
-   newContactNode->next = tempNext;
+   // ContactNode* tempNext = thisNode->next;
+   // newContactNode->next = tempNext;
+   newContactNode->next = NULL;
 }
 
 char* GetName(ContactNode* thisNode) {
